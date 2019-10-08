@@ -11,18 +11,18 @@ XX3 N004 N004 N001 N002 N004 Voltage_Reference N004 N005 N003 0 30% 90% 50% 70% 
 .ends modulo_bateria
 
 .subckt dividor_bateria Bateria_Input GND OutPut
-R1 Bateria_Input OutPut 14K
+R1 Bateria_Input OutPut 30K
 R2 OutPut GND 10K
 .ends dividor_bateria
 
 .subckt referencia GND voltage_ref 30% 50% 70% 90%
-R1 voltage_ref 90% 133
+R1 voltage_ref 90% 859
 R2 90% GND 1k
-R3 voltage_ref 70% 280
+R3 voltage_ref 70% 1092
 R4 70% GND 1k
-R5 voltage_ref 50% 470
+R5 voltage_ref 50% 1404
 R6 50% GND 1k
-R7 voltage_ref 30% 690
+R7 voltage_ref 30% 1809
 R8 30% GND 1k
 .ends referencia
 
